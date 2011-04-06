@@ -30,7 +30,6 @@ Provides:	ispell-pt
 
 %description
 A %{languageenglazy} dictionary for use with aspell, a spelling checker.
-Provides both European and Brazilian spellings
 
 
 %prep
