@@ -13,7 +13,7 @@ Name:		aspell-%{languagecode}
 Summary:	%{languageenglazy} files for aspell
 Group:		System/Internationalization
 Version:	0.60.0
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPL
 URL:		http://aspell.sourceforge.net/
 # http://ftp.gnu.org/gnu/aspell/dict/%{languagecode}/aspell-%{languagecode}-%{src_ver}.tar.bz2
