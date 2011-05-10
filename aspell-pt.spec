@@ -1,6 +1,9 @@
 %define _enable_debug_packages %{nil}
 %define debug_package          %{nil}
 
+%define intname aspell6
+%define intver 20110424
+
 %define languageenglazy Portuguese
 %define languagecode pt
 %define lc_ctype pt_PT
@@ -14,7 +17,7 @@ Release:	%mkrel 1
 License:	GPL
 URL:		http://aspell.sourceforge.net/
 # http://ftp.gnu.org/gnu/aspell/dict/%{languagecode}/aspell-%{languagecode}-%{src_ver}.tar.bz2
-Source:		http://natura.di.uminho.pt/download/sources/Dictionaries/aspell6/LATEST/aspell6.%{languagecode}-latest.tar.bz2
+Source:		http://natura.di.uminho.pt/download/sources/Dictionaries/aspell6/%{intname}.%{languagecode}-%{intver}.tar.bz2
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	aspell >= 0.60
 BuildRequires:	make
@@ -33,7 +36,7 @@ A %{languageenglazy} dictionary for use with aspell, a spelling checker.
 
 
 %prep
-%setup -qn aspell6-pt_PT-20110331-0
+%setup -qn %{intname}-%{lc_ctype}-%{intver}-0
 
 %build
 # don't use configure macro
@@ -41,15 +44,15 @@ A %{languageenglazy} dictionary for use with aspell, a spelling checker.
 %make
 
 %install
-rm -fr $RPM_BUILD_ROOT
+rm -fr %buildroot
 %makeinstall_std
 
 %clean
-rm -fr $RPM_BUILD_ROOT
+rm -fr %buildroot
 
 %files
 %defattr(-,root,root)
-%doc README Copyright
+%doc README Copyright doc/LEIAME.txt
 %{_libdir}/aspell-0.60
 
 
