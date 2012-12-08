@@ -13,7 +13,7 @@ Name:		aspell-%{languagecode}
 Summary:	%{languageenglazy} files for aspell
 Group:		System/Internationalization
 Version:	0.60.0
-Release:	%mkrel 2
+Release:	%mkrel 3
 License:	GPL
 URL:		http://aspell.sourceforge.net/
 # http://ftp.gnu.org/gnu/aspell/dict/%{languagecode}/aspell-%{languagecode}-%{src_ver}.tar.bz2
@@ -55,4 +55,65 @@ rm -fr %buildroot
 %doc README Copyright doc/LEIAME.txt
 %{_libdir}/aspell-0.60
 
+
+
+
+%changelog
+* Tue May 10 2011 José Melo <ze@mandriva.org> 0.60.0-2mdv2011.0
++ Revision: 673203
+- 20110424-0
+
+* Wed Apr 06 2011 José Melo <ze@mandriva.org> 0.60.0-1
++ Revision: 650945
+- fix description
+- version 0.60 (20110331-0)
+- packaged splited since there isnt anymore an updated archieve containing
+  pt_PT and pt_BR, they now exist separated
+
+* Tue Nov 30 2010 Oden Eriksson <oeriksson@mandriva.com> 0.50.2-12mdv2011.0
++ Revision: 603454
+- rebuild
+
+* Sun Mar 14 2010 Oden Eriksson <oeriksson@mandriva.com> 0.50.2-11mdv2010.1
++ Revision: 518955
+- rebuild
+
+* Sun Aug 09 2009 Oden Eriksson <oeriksson@mandriva.com> 0.50.2-10mdv2010.0
++ Revision: 413097
+- rebuild
+
+* Fri Mar 06 2009 Antoine Ginies <aginies@mandriva.com> 0.50.2-9mdv2009.1
++ Revision: 350088
+- 2009.1 rebuild
+
+* Mon Jun 16 2008 Thierry Vignaud <tv@mandriva.org> 0.50.2-8mdv2009.0
++ Revision: 220439
+- rebuild
+
+* Sun Mar 09 2008 Anssi Hannula <anssi@mandriva.org> 0.50.2-7mdv2008.1
++ Revision: 182628
+- provide enchant-dictionary
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+    - kill re-definition of %%buildroot on Pixel's request
+    - s/Mandrake/Mandriva/
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+
+* Wed Feb 21 2007 Oden Eriksson <oeriksson@mandriva.com> 0.50.2-5mdv2007.0
++ Revision: 123351
+- Import aspell-pt
+
+* Wed Feb 21 2007 Oden Eriksson <oeriksson@mandriva.com> 0.50.2-5mdv2007.1
+- use the mkrel macro
+- disable debug packages
+
+* Fri Dec 03 2004 Thierry Vignaud <tvignaud@mandrakesoft.com> 0.50.2-4mdk
+- rebuild for new aspell
+
+* Wed Jul 28 2004 Pablo Saratxaga <pablo@mandrakesoft.com> 0.50.2-3mdk
+- allow build on ia64
 
