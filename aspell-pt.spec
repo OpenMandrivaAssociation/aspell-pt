@@ -11,8 +11,8 @@
 Summary:	%{languageenglazy} files for aspell
 Name:		aspell-%{languagecode}
 Group:		System/Internationalization
-Version:	20170615
-Release:	13
+Version:	20190329
+Release:	1
 License:	GPLv2
 Url:		http://aspell.sourceforge.net/
 # http://ftp.gnu.org/gnu/aspell/dict/%{languagecode}/aspell-%{languagecode}-%{src_ver}.tar.bz2
