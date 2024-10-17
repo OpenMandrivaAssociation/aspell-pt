@@ -14,7 +14,7 @@ Group:		System/Internationalization
 Version:	20220621
 Release:	1
 License:	GPLv2
-Url:		http://aspell.sourceforge.net/
+Url:		https://aspell.sourceforge.net/
 # http://ftp.gnu.org/gnu/aspell/dict/%{languagecode}/aspell-%{languagecode}-%{src_ver}.tar.bz2
 Source0:	http://natura.di.uminho.pt/download/sources/Dictionaries/aspell6/%{intname}.%{languagecode}-%{intver}.tar.bz2
 
